@@ -1,0 +1,11 @@
+<section>
+  <ul>
+    <li *ngFor="let poke of pokemons">
+      ID: {{poke.id}} Name: {{poke.name}} , Type: <span *ngFor="let t of poke.types"> {{t.type.name}}</span>
+    </li>
+  </ul>
+
+  <button (click)="getPokemons()">Get ten more</button>
+
+
+</section>
